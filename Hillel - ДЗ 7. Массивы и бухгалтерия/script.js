@@ -43,6 +43,8 @@ function init() {
       break;
 
     case 3:
+      let avarage = arrayNumber.reduce((a, b) => (a + b)) / arrayNumber.length;
+      console.log(avarage)
       break;
   }
 
@@ -75,6 +77,7 @@ function init() {
   let operator = prompt('разделитель (опционально для некоторых операций)');
   alert(arrayNumber.join(operator));
   console.log(arrayNumber.join(operator));
+
 }
 
 let news;
