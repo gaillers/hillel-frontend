@@ -26,12 +26,18 @@ function init() {
   switch (menuOperationsArray) {
     case 1:
       console.log('По возрастанию');
-      ascendingSort(arrayNumber);
-      console.log(arrayNumber);
+      
+
+
+      // ascendingSort(arrayNumber);
+      // console.log(arrayNumber);
+
+
 
       console.log('По убыванию');
-      descendingSort(arrayNumber);
-      console.log(arrayNumber);
+
+      // descendingSort(arrayNumber);
+      // console.log(arrayNumber);
       break;
 
     case 2:
