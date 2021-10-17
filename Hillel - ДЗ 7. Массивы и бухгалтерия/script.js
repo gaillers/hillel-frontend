@@ -1,19 +1,22 @@
 function init() {
+  let menuOperationsArray;
   let arrayNumber = [];
 
   function getArray() {
-    element = prompt('Введите массив чисел через пробел');
-    arrayNumber = element.split(' ');
+    let array = [];
+    const element = prompt('Введите массив чисел через пробел');
+    array = element.split(' ').map(el => +el);
 
     console.log('Нынешний массив');
-    console.log(arrayNumber);
-    return arrayNumber;
+    console.log(array);
+    return array;
   }
-  getArray();
 
+  arrayNumber = getArray();
+  
   function listOperationsArray() {
     do {
-      menuOperationsArray =
+     menuOperationsArray =
         +prompt(`Выбирите операцию над массивом которую хотите выполнить.
    1 - отсортировать по возрастанию/убыванию
    2 - вывести все четные/нечетные
@@ -26,18 +29,14 @@ function init() {
   switch (menuOperationsArray) {
     case 1:
       console.log('По возрастанию');
-      
 
-
-      // ascendingSort(arrayNumber);
-      // console.log(arrayNumber);
-
-
+      arrayNumber?.sort((a, b) => a - b)
+      console.log(arrayNumber);
 
       console.log('По убыванию');
+      arrayNumber?.sort((a, b) => b - a)
 
-      // descendingSort(arrayNumber);
-      // console.log(arrayNumber);
+      console.log(arrayNumber);
       break;
 
     case 2:
@@ -52,32 +51,6 @@ function init() {
       let avarage = arrayNumber.reduce((a, b) => (a + b)) / arrayNumber.length;
       console.log(avarage)
       break;
-  }
-
-  // отсортировать по возрастанию/убыванию //
-  function ascendingSort(arr) {
-    for (let j = 0; j < arr.length; j++) {
-      for (let i = 0; i < arr.length; i++) {
-        if (arr[i] > +arr[i + 1]) {
-          let temp = +arr[i];
-          arr[i] = +arr[i + 1];
-          arr[i + 1] = temp;
-        }
-      }
-    }
-    return arr;
-  }
-  function descendingSort(arr) {
-    for (let j = 0; j < arr.length; j++) {
-      for (let i = 0; i < arr.length; i++) {
-        if (+arr[i] > +arr[i - 1]) {
-          let temp = +arr[i];
-          arr[i] = +arr[i - 1];
-          arr[i - 1] = temp;
-        }
-      }
-    }
-    return arr;
   }
 
   let operator = prompt('разделитель (опционально для некоторых операций)');

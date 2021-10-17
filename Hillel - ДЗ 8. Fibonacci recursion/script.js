@@ -1,16 +1,7 @@
-const fib = +prompt('Введите число для ряда Фибоначчи')
+const fibsNumber = +prompt('Введите число для ряда Фибоначчи')
 
-const fibCals = function (fib) {
-  let myArr = [];
-
-  for (let i = 0; i < fib; i++) {
-      if(i < 2) {
-          myArr.push(i);
-      } else {
-          myArr.push(myArr[i-2] + myArr[i-1]);
-      }
-  } 
-  return myArr;
+function fib(number) {
+    return number <= 1 ? number : fib(number - 1) + fib(number - 2);
 }
-
-console.log(fibCals(fib));
+fib(fibsNumber); 
+console.log(fib(fibsNumber))
