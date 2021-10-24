@@ -12,13 +12,11 @@
         <div class="todo-add">
           <h1>ToDoList Add</h1>
           <input type="text" id="text-todo" value="" />
-          <button id="button-add">add list</button>
+          <button id="btn-add">add list</button>
         </div>
         <div class="todo-wrapper">
           <h2>ToDoList</h2>
-          <div class="todo-list">
-
-          </div>
+          <div class="todo-list"></div>
         </div>
       </section>
     </main>
@@ -32,27 +30,28 @@
     max-width: 800px;
     margin: auto;
   }
-  .todo-add{
+  .todo-add {
     margin-bottom: 50px;
   }
-  .todo-add input{
+  .todo-add input {
     width: 50%;
     padding: 10px;
   }
   .todo-list {
-
   }
   .todo-item {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .todo-item .description {
-    
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+    padding: 10px;
   }
   .buttons .btn-complate {
-
   }
   .buttons .btn-delete {
-
   }
-
 </style>
