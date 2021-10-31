@@ -12,7 +12,7 @@
     newTask.innerHTML = `
       <div class="description">${deskTaskContent}</div>
       <div class="buttons">
-          <input id="btn-complate" class="btn-complate" type="checkbox">
+        <input id="btn-complate" class="btn-complate" type="checkbox">
         <button id="btn-remove" class="btn-remove">Delete</button>
        </div>
       `;
