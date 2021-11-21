@@ -19,12 +19,15 @@ function Student(name, faculty, marks) {
       return `
        Name: ${this.name}
        Faculty: ${this.faculty}
+       Marks: ${this.marks}
+       Max Marks: ${this.getMaxMark()}
+       Min Marks: ${this.getMinMark()}
        AvgMark: ${this.getAvgMark()}
       `
    }
 }
 
-const student = new Student('Leha', 'Gamer', [10, 10, 8, 10, 9, 9, 10]);
+const student = new Student('Alexey', 'Programmer', [10, 10, 8, 10, 9, 9, 10, 4, 5, 7, 6, 5, 10]);
 console.log(student.getInfo());
 
 // Методы

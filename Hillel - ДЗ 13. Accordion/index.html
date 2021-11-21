@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/Hillel - ДЗ 13. Accordion/accardion-items.js" defer></script>
+    <script src="/Hillel - ДЗ 13. Accordion/script.js" defer></script>
+  </head>
+  <body>
+
+    <div class="accordion" id="accordion">
+      <div class="accordion-item">
+        <div class="accordion-item__heading">Accordion 1</div>
+        <div class="accordion-item__content">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni animi
+          adipisci hic aliquam reiciendis incidunt nulla cumque ipsa corporis!
+          Iusto nostrum veniam distinctio dolor perferendis ad quo repudiandae
+          et debitis?
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-item__heading">Accordion 2</div>
+        <div class="accordion-item__content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+          consequuntur vero perspiciatis dolor dolores eaque odio nulla placeat
+          accusamus sapiente! Amet tempora magnam voluptas sequi consequatur
+          obcaecati quibusdam repellendus accusamus.
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-item__heading">Accordion 3</div>
+        <div class="accordion-item__content">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam rerum
+          nemo error aspernatur itaque numquam sed eaque explicabo dicta quam
+          doloremque voluptatem harum, totam nulla quis asperiores fuga.
+          Voluptatum, eveniet!
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+<style>
+  .accordion-item__heading {
+    line-height: 2em;
+    background-color: aqua;
+    cursor: pointer;
+  }
+  .accordion-item__content {
+    padding: 10px;
+  }
+  .accordion-item {
+    text-align: center;
+    width: 50%;
+    border: 2px solid black;
+  }
+  .accordion-item + .accordion-item {
+    margin-top: 35px;
+  }
+
+  .accordion-item__content.hidden {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .accordion-item__content.visible {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+</style>
