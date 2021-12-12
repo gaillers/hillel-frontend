@@ -27,7 +27,6 @@ class Accordion {
       return Array.prototype.map.call(openedAccardion, e => {
          
       })
-
   }
 
   addAccordionItem(heading, content) {
