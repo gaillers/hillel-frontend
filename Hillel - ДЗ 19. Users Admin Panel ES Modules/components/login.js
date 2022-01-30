@@ -1,4 +1,4 @@
-class LoginComponent {
+export class LoginComponent {
    constructor ( template, containerEl ) {
       this._template = template;
       this._containerEl = containerEl;
@@ -8,7 +8,7 @@ class LoginComponent {
       this.render();
    }
 
-   onSubmit () {
+    onSubmit () {
       const email = this._containerEl.querySelector('#email_input').value;
       const password = this._containerEl.querySelector('#password_input').value;
 
@@ -20,7 +20,7 @@ class LoginComponent {
 
    
 
-   render() {
+   export render() {
       if (!this._containerEl) return;
       
       this._containerEl.innerHTML = render(this._template, {});

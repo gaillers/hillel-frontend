@@ -1,4 +1,4 @@
-class UserComponent {
+export class UserComponent {
    constructor ( template, cardTemplate, containerEl ) {
       this._template = template;
       this._userCardTemplate = cardTemplate;

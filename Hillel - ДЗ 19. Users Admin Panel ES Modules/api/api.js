@@ -1,6 +1,5 @@
 const api = (() => {
   const API_URL = 'https://reqres.in/api';
-
   class API {
     login(email, password) {
       return fetch(`${API_URL}/login`, {

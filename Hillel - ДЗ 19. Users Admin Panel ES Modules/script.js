@@ -1,3 +1,6 @@
+import { LoginComponent } from './components/login';
+import { UserComponent } from './components/users';
+
 const mainContainer = document.getElementById('main');
 
 const login = new LoginComponent(
